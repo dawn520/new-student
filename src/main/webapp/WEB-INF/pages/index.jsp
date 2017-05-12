@@ -46,7 +46,7 @@ function checkCode(){
     <div class="main">
         <div class="login-top">
             <div class="sig-up">
-                登录<div class="register"><a href="${pageContext.request.contextPath }/jsp/register.jsp">免费注册</a></div>
+                登录<div class="register"><a href="${pageContext.request.contextPath }/WEB-INF/pages/register.jsp">免费注册</a></div>
             </div>
         </div>
         <!-- 提交则跳转到login下面的list.action页面 -->
