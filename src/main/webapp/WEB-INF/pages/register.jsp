@@ -3,9 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.bootcss.com/normalize/5.0.0/normalize.min.css"/>
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/css/login.css"/>
+    <link rel="stylesheet" href="/static/css/login.css"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <STYLE type=text/css>
 
@@ -100,7 +100,7 @@ function checksex(){
 <body>
 <div id="header">
     <div class="header-index">
-        <img src="${pageContext.request.contextPath }/images/logo-big.png" alt=""/>
+        <img src="/static/images/logo-big.png" alt=""/>
     </div>
 </div>
 <div id="register">
@@ -109,7 +109,7 @@ function checksex(){
             <h2 class="title">注册</h2>
             <a href="#">已有账号，马上登录</a>
         </div>
-  <form action="${pageContext.request.contextPath }/user/insert.action" method="post" onsubmit=" return checkForm()" >
+  <form action="register" method="post" onsubmit=" return checkForm()" >
         <div class="rgst-main">
             <div class="sig-item">
                 <div class="item-name">用户名<span class="required">*</span>
@@ -147,9 +147,9 @@ function checksex(){
                 <div class="item-name classes1">班&nbsp;级<span class="required">*</span></div>
                 <div class="item-content classes2">
                     <select name="classes">
-                        <option value="电子141" >电子141</option>
-                        <option value="电子142">电子142</option>
-                        <option value="电子143" selected="selected">电子143</option>
+                        <option value="1" >电子141</option>
+                        <option value="2">电子142</option>
+                        <option value="3" selected="selected">电子143</option>
                     </select>
                     <span id="checkcode"></span>
                 </div>

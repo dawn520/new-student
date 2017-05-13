@@ -1,11 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<link rel="stylesheet" href="https://cdn.bootcss.com/normalize/5.0.0/normalize.min.css"/>
-    <link rel="stylesheet" href="../../css/login.css"/>
-    <script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="/static/css/login.css"/>
+    <script type="text/javascript" src="/static/js/jquery-1.11.3.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <STYLE type=text/css>
 
@@ -15,7 +16,7 @@
 	.success{
 		color:green;
 	}
-	
+
 </STYLE>
 <title>首页</title>
 <script type="text/javascript">
@@ -29,8 +30,8 @@ function checkCode(){
 		$("#checkcode").html("登录名不能为空");
 	}else{
 		$("#checkcode").removeClass("error");
-		
-		
+
+
 	}
 }
 </script>
@@ -39,18 +40,18 @@ function checkCode(){
 <body>
 <div id="header">
     <div class="header-index">
-        <img src="${pageContext.request.contextPath }/images/logo-big.png" alt=""/>
+        <img src="/static/images/logo-big.png" alt=""/>
     </div>
 </div>
 <div id="container">
     <div class="main">
         <div class="login-top">
             <div class="sig-up">
-                登录<div class="register"><a href="${pageContext.request.contextPath }/WEB-INF/pages/register.jsp">免费注册</a></div>
+                登录<div class="register"><a href="/static/WEB-INF/pages/register.jsp">免费注册</a></div>
             </div>
         </div>
         <!-- 提交则跳转到login下面的list.action页面 -->
-      <form id="login" action="${pageContext.request.contextPath }/login/login.action" 
+      <form id="login" action="login"
 	method="post" enctype="multipart/form-data">
         <div class="login-center">
             <div class="user">
